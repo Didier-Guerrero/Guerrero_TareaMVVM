@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewModels="clr-namespace:Guerrero_TareaMVVM.DG_ViewModels"
              x:Class="Guerrero_TareaMVVM.DG_Views.DG_Notas"
-             Title="DGNotas" BackgroundColor="Gray">
+             Title="DG Creacion de Nota" BackgroundColor="Gray">
     <ContentPage.BindingContext>
         <viewModels:DG_NoteViewModel />
     </ContentPage.BindingContext>
@@ -14,11 +14,11 @@
         HeightRequest="100" />
 
         <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
-            <Button Text="Save"
+            <Button Text="Guardar"
             Command="{Binding DG_SaveCommand}"/>
 
             <Button Grid.Column="1"
-            Text="Delete"
+            Text="Eliminar"
             Command="{Binding DG_DeleteCommand}"/>
         </Grid>
     </VerticalStackLayout>

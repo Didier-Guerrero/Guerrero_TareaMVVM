@@ -3,12 +3,17 @@
     x:Class="Guerrero_TareaMVVM.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Guerrero_TareaMVVM"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:views="clr-namespace:Guerrero_TareaMVVM.DG_Views"
+    Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Title="Notas"
+        ContentTemplate="{DataTemplate views:DG_TodasNotas}"
+        Icon="{OnPlatform 'icon_notes.png', iOS='icon_notes_ios.png', MacCatalyst='icon_notes_ios.png'}" />
+
+    <ShellContent
+        Title="Acerca de"
+        ContentTemplate="{DataTemplate views:DG_About}"
+        Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
 
 </Shell>

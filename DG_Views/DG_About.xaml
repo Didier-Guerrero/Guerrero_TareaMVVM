@@ -4,7 +4,7 @@
              xmlns:viewModels="clr-namespace:Guerrero_TareaMVVM.DG_ViewModels"
              xmlns:models="clr-namespace:Guerrero_TareaMVVM.DG_Models"
              x:Class="Guerrero_TareaMVVM.DG_Views.DG_About"
-             Title="DG_About" BackgroundColor="Grey">
+             Title="Guerrero Acerca de" BackgroundColor="Grey">
     <ContentPage.BindingContext>
         <viewModels:DG_AboutViewModel />
     </ContentPage.BindingContext>
@@ -15,11 +15,11 @@
            HeightRequest="64" />
             <Label FontSize="22" FontAttributes="Bold" Text="{Binding Title}" VerticalOptions="End" TextColor="White"/>
             <Label FontSize="22" Text="{Binding Version}" VerticalOptions="End" TextColor="White"/>
-            <Label FontSize="22" FontAttributes="Bold" Text="Notes" VerticalOptions="End" TextColor="White"/>
+            <Label FontSize="22" FontAttributes="Bold" Text="App MVVM" VerticalOptions="End" TextColor="White"/>
             <Label FontSize="22" Text="v1.0" VerticalOptions="End" TextColor="White"/>
         </HorizontalStackLayout>
 
         <Label Text="This app is written in XAML and C# with .NET MAUI." TextColor="White"/>
-        <Button Text="Learn more..." Command="{Binding ShowMoreInfoCommand}" />
+        <Button Text="Aprender mas..." Command="{Binding ShowMoreInfoCommand}" />
     </VerticalStackLayout>
 </ContentPage>
